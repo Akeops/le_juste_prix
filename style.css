@@ -29,3 +29,11 @@ html, body {
   .fini {
     background-color : #0c9463;
   }
+
+  .row {
+    background-color: white;
+  }
+
+  small.text-danger {
+ 
+  }
