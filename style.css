@@ -34,6 +34,6 @@ html, body {
     background-color: white;
   }
 
-  small.text-danger {
- 
+  input {
+    border-radius: 5px;
   }
