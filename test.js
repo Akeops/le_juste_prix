@@ -9,7 +9,31 @@ error.style.display = "none";
 
 // Etape 3 - Générer un nombre aléatoire entre 0 et 1000
 let nombreAleatoire = Math.floor(Math.random() * 1001);
+console.log(nombreAleatoire);
+let coups = 0;
+let nombreChoisi;
 
+// Etape 6 - Créer la fonction vérifier
+function verifier(nombre){
+
+    let instruction = document.createElement('div');
+
+    if(nombre < nombreAleatoire){
+        instruction.textContent = "#" + coups + " ( " + nombre + " ) C'est plus !";
+        instruction.className = "instruction plus";  
+    }
+    else if(nombre > nombreAleatoire){
+        instruction.textContent = "#" + coups + " ( " + nombre + " ) C'est moins !";
+        instruction.className = "instruction moins"; 
+    }
+    else{
+        instruction.textContent = "#" + coups + " ( " + nombre + " ) Félicitations c'est le juste prix  !";
+        instruction.className = "instruction fini"; 
+        input.disabled = true;
+    }
+
+    document.querySelector('#instruction').prepend(instruction);
+}
 
 // Etape 4 - Vérifier que l'utilisateur donne bien un nombre
 
@@ -34,7 +58,11 @@ formulaire.addEventListener('submit', (e) => {
         input.style.borderColor = "#E74646"
     }
     else {
+        coups++;
         input.style.borderColor = "green";
+        nombreChoisi = input.value;
+        input.value = "";
+        verifier(nombreChoisi);
     }
 });
 
@@ -50,4 +78,3 @@ formulaire.addEventListener('click', function() {
 
 // Etape 5 - Agir à l'envoi du formulaire
 
-// Etape 6 - Créer la fonction vérifier
