@@ -18,6 +18,10 @@ button {
   width: 15vh;
 }
 
+div.row.justify-content-center {
+  background-color: #232020;
+}
+
 #prix {
   border-radius: 5px;
   border-style: ridge;
@@ -55,7 +59,7 @@ button {
   background-color: white;
   justify-content: center;
   display: flex;
-  margin: 5vh 90vh 5vh 90vh;
+  margin: 5vh 50vh 5vh 50vh;
 }
 
 
