@@ -1,0 +1,7 @@
+Ce programme est la reconstitution du juste prix que j'ai fait grâce à un cours de Javascript.
+
+Cela génère un nombre aléatoire et l'utilisateur doit chercher ce nombre. 
+Si le nombre rentré est moins que le nombre aléatoire ça va afficher que "C'est moins!" pour guider l'utilisateur et vice versa.
+
+J'ai fais un css qui rend bien avec mon écran mais je n'ai pas fais de responsive alors il se peut que sur votre écran cela ne rende pas du tout bien.
+
