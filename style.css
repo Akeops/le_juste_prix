@@ -10,6 +10,10 @@ header {
   background-color: #232020;
 }
 
+small {
+  margin-left: 50vh;
+}
+
 button {
   background-color: #0a7ef2;
   color: white;
@@ -29,6 +33,7 @@ div.row.justify-content-center {
   width: 60vh;
   height: 7vh;
 }
+
 
 #instructions {
   color: white;
@@ -59,7 +64,7 @@ div.row.justify-content-center {
   background-color: white;
   justify-content: center;
   display: flex;
-  margin: 5vh 50vh 5vh 50vh;
+  margin: 5vh 50vh 2vh 50vh;
 }
 
 
